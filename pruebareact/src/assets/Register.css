@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html {
+    height: 100vh;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("./note.png");
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    min-height: 100vh;
+
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+}
+
+label,
+input {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.form-label {
+    color: #ffffff;
+    font-size: large;
+}
+
+.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.329);
+    font-size: smaller;
+}
+
+.container {
+
+    background: rgba(38, 0, 121, 0.59);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(38, 0, 121, 0.59);
+    border: 1px solid rgba(38, 0, 121, 0.59);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+
+}
+
+.opcbtn {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+
+
+}
+
+
+.bgimg {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-size: cover;
+}
+
+.btn-outline-info {
+    border-color: rgb(93, 3, 137);
+    background-color: #ffffff;
+    color: rgb(93, 3, 137);
+    width: fit-content;
+
+}
+
+
+
+.btn-success {
+    background-color: rgba(170, 0, 255, 0.59);
+    width: fit-content;
+
+}
+
+.btn-success:hover {
+    background-color: #bb00ff;
+}
+
+@media (max-width:1199px) {
+    .opcbtc {
+        display: block;
+        width: max-content;
+    }
+}
