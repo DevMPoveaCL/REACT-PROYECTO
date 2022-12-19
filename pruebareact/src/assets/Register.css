@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #2F3367;
     font-family: 'Poppins';
     font-style: normal;
 
@@ -40,7 +40,7 @@ input {
 }
 
 .form-label {
-    color: #ffffff;
+    color: #2F3367;
     font-size: large;
 }
 
@@ -51,7 +51,7 @@ input {
 
 .container {
 
-    background: rgba(38, 0, 121, 0.59);
+    background: rgb(255, 255, 255);
     border-radius: 7px;
     box-shadow: 0 4px 30px rgba(38, 0, 121, 0.59);
     border: 1px solid rgba(38, 0, 121, 0.59);
@@ -80,9 +80,9 @@ input {
 }
 
 .btn-outline-info {
-    border-color: rgb(93, 3, 137);
+    border-color: #2F3367;
     background-color: #ffffff;
-    color: rgb(93, 3, 137);
+    color: #2F3367;
     width: fit-content;
 
 }
@@ -90,7 +90,7 @@ input {
 
 
 .btn-success {
-    background-color: rgba(170, 0, 255, 0.59);
+    background-color: #2F3367;
     width: fit-content;
 
 }
