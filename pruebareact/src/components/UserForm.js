@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "../assets/Register.css";
 
 const initialUsuario = {
+    register_id: "",
     name: "",
     username: "",
     email: "",
@@ -13,13 +14,14 @@ const initialUsuario = {
 //Creamos el componente asociado al formulario de usuario junto con sus propiedades.
 const UserFormComponent = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdit }) => {
     const [usuario, setUsuario] = useState(initialUsuario);
-    const { name, username, email, password } = usuario;
+    const { register_id, name, username, email, password } = usuario;
     useEffect(() => {
         if (usuarioEditado !== null) {
             setUsuario(usuarioEditado);
         } else {
             setUsuario(
                 {
+                    register_id: "",
                     name: "",
                     username: "",
                     email: "",
@@ -46,6 +48,7 @@ const UserFormComponent = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
                 <form class="row col-md-4 d-flex align-self-center justify-content-center">
 
                     {usuarioEditado !== null ? <h1>Editar Usuario</h1> : <h1 class="py-5">Regístrese</h1>}
+
                     <div class="mb-3" >
                         <label class="form-label" for="id">Nombre</label>
                         <input class="form-control" placeholder="Juan" type="text" id="name" name="name" value={name} onChange={handleInputChange} />
